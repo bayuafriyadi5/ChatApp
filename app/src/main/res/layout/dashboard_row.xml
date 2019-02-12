@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="72dp"
+            app:civ_border_width="4dp"
+            android:layout_height="72dp"
+            app:civ_border_color="@color/colorPrimary"
+            app:srcCompat="@mipmap/ic_launcher_round"
+            android:id="@+id/imageView_latest_message"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"/>
+    <TextView
+            android:text="Username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/username_latest_message"
+            app:layout_constraintStart_toEndOf="@+id/imageView_latest_message"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/message_latest_message"
+            app:layout_constraintVertical_chainStyle="packed"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/message_latest_message"
+            app:layout_constraintStart_toEndOf="@+id/imageView_latest_message"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username_latest_message"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"/>
+</android.support.constraint.ConstraintLayout>
